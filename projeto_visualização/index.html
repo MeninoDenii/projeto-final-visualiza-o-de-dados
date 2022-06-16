@@ -42,20 +42,21 @@
             Esse conjunto de dados foi criado para listar todos os programas
             disponíveis no streaming do Amazon Prime e analisar os dados para
             encontrar fatos interessantes. Esses dados foram adquiridos em maio
-            de 2022 contendo dados disponíveis nos Estados Unidos.
+            de 2022 contendo dados disponíveis nos Estados Unidos. 
+            Segue abaixo uma breve explicação das colunas do dataset.
           </p>
           <ul>
-            <li>title: Nome do filme/serie</li>
-            <li>show type: Serie de tv ou filme</li>
-            <li>release year: Ano de produção</li>
-            <li>age certification: classificação etária</li>
-            <li>runtime: Duração do episodio ou filme</li>
-            <li>genres: Lista de generos</li>
-            <li>production countries: País de produção</li>
-            <li>IMDB Score: Notas do IMDB</li>
-            <li>IMDB Votes: Votos do IMDB</li>
-            <li>TMDB Popularity: popularidade do TDMB</li>
-            <li>TMDB Score: Notas do TMDB</li>
+            <li><b>title:</b> Nome do filme/serie</li>
+            <li><b>show type:</b> Serie de tv ou filme</li>
+            <li><b>release year:</b> Ano de produção</li>
+            <li><b>age certification:</b> classificação etária</li>
+            <li><b>runtime:</b> Duração do episodio ou filme</li>
+            <li><b>genres:</b> Lista de generos</li>
+            <li><b>production countries:</b> País de produção</li>
+            <li><b>IMDB Score:</b> Notas do IMDB</li>
+            <li><b>IMDB Votes:</b> Votos do IMDB</li>
+            <li><b>TMDB Popularity:</b> popularidade do TDMB</li>
+            <li><b>TMDB Score:</b> Notas do TMDB</li>
           </ul>
         </div>
         <div class="grafics">
@@ -67,12 +68,12 @@
               e o TMDB score, ou seja, se existe uma relação entre os dois.
               <br />
               <br />
-              Obs:
-              <u>
-                Ao passar o mouse em cima do gráfico, é obtido as seguintes
+              <b>
+                Obs:
+                Ao passar o mouse em cima dos pontos do gráfico, é obtido as seguintes
                 informações: Titulo do filme, nota do imdb score, e a nota do
                 tmdb score.
-              </u>
+              </b>
             </p>
             <iframe
               width="100%"
@@ -82,18 +83,15 @@
             ></iframe>
           </div>
           <div class="visualization">
-            <h1>Lorem Ipsum</h1>
+            <h1>Gráfico de Linha do Tempo de Gêneros</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Neste gráfico apresentamos uma linha do tempo de gêneros no qual mostramos a quantidade de votos dos filmes de acordo com o ano, 
+              ou seja com este gráfico temos uma ideia da variação dos votos de acordo com o ano e conseguiremos por exemplo 
+              verificar se existe uma tendência de votos em um ano específico ou se existe uma tendência de votos em um gênero específico.
+              <br />
+              <br />
+              Utilizamos a interatividade de seleção para selecionar o gênero específico que o usuário deseja visualizar,
+              adicionamos um Tooltip para mostrar as informações do filme como título, país de produção e quantidade de votos do IMDB.
             </p>
             <iframe
               width="100%"
@@ -103,18 +101,16 @@
             ></iframe>
           </div>
           <div class="visualization">
-            <h1>Lorem Ipsum</h1>
+            <h1>Gráfico de Disperção que exibe a popularidade dos filmes com o passar dos anos</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Neste gráfico apresentamos a popularidade dos filmes com o passar dos anos, ou seja, 
+              com este gráfico temos uma ideia da variação da popularidade de acordo com o ano.
+              Utilizamos a interatividade do Zoom para podermos visualizar o gráfico em um intervalo específico de anos, adicionamos
+              um Tooltip para mostrar as informações do filme como título, país de produção e popularidade do TMDB.
+              <br />
+              <br />
+              <b>No label limitamos o domínio da opacidade da cor para representar a popularidade do filme ou seja quanto mais escuro mais popular o filme
+              quanto mais claro menos popular.</b>
             </p>
             <iframe
               width="100%"
@@ -124,18 +120,11 @@
             ></iframe>
           </div>
           <div class="visualization">
-            <h1>Lorem Ipsum</h1>
+            <h1>Gráfico de barra dos gêneros de filmes</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Neste gráfico apresentamos a soma dos votos de popularidade de acordo com o gênero dos filmes.
+              Adicionamos um Tooltip para exibir o total da soma da popularidade dos filmes ou seja, com esta visualização
+              conseguimos observar qual o gênero obteve mais votos.
             </p>
             <iframe
               width="100%"
@@ -145,18 +134,10 @@
             ></iframe>
           </div>
           <div class="visualization">
-            <h1>Lorem Ipsum</h1>
+            <h1>Gráfico de Disperção com repetição de colunas</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Nestes graficos de correlação, colocamos 3 colunas importantes do dataset, 
+              sendo elas: runtime, tmdb_score, imdb_score, para verificar se há uma relação entre elas, ou se há alguma forma de regressão, é visto que a unica forma de regressão é quando utilizamos o imdb_score com o tmdb_score, onde ao retiramos os dados colados no eixo da pra aplicar a forma.
             </p>
             <iframe
               width="100%"
