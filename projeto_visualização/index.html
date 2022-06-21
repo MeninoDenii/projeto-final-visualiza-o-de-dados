@@ -46,12 +46,12 @@
             Segue abaixo uma breve explicação das colunas do dataset.
           </p>
           <ul>
-            <li><b>title:</b> Nome do filme/serie</li>
-            <li><b>show type:</b> Serie de tv ou filme</li>
+            <li><b>title:</b> Nome do filme/série</li>
+            <li><b>show type:</b> Série de tv ou filme</li>
             <li><b>release year:</b> Ano de produção</li>
             <li><b>age certification:</b> classificação etária</li>
-            <li><b>runtime:</b> Duração do episodio ou filme</li>
-            <li><b>genres:</b> Lista de generos</li>
+            <li><b>runtime:</b> Duração do episódio ou filme</li>
+            <li><b>genres:</b> Lista de gêneros</li>
             <li><b>production countries:</b> País de produção</li>
             <li><b>IMDB Score:</b> Notas do IMDB</li>
             <li><b>IMDB Votes:</b> Votos do IMDB</li>
@@ -61,7 +61,7 @@
         </div>
         <div class="grafics">
           <div class="visualization">
-            <h1>Gráfico de Disperção de Scores</h1>
+            <h1>Gráfico de Dispersão de Scores</h1>
             <p>
               Neste gráfico você pode escolher a classificação etária e o
               gênero, para verificar se existe uma dispersão entre o IMDB score
@@ -77,10 +77,14 @@
             </p>
             <iframe
               width="100%"
-              height="874"
+              height="860"
               frameborder="0"
               src="https://observablehq.com/embed/@1c4796c9434db5cb/projeto-final-visualizacao-de-dados/2?cells=viewof+plot1View"
             ></iframe>
+            <p>
+              Nota-se que o <b>imdb score</b> e o <b>tmdb score</b> não possuem uma relação direta, por exemplo: existem filmes com 10 de imdb score e 0 de tmdb score e vice-versa, ou seja, as notas dos especialistas e do público
+              não se correlacionam, observou-se que o gênero de filme drama possui mais filmes em relação aos outros gêneros. 
+            </p>
           </div>
           <div class="visualization">
             <h1>Gráfico de Linha do Tempo de Gêneros</h1>
@@ -99,9 +103,16 @@
               frameborder="0"
               src="https://observablehq.com/embed/@1c4796c9434db5cb/projeto-final-visualizacao-de-dados/2?cells=viewof+plot2View"
             ></iframe>
+            <p>
+              Os gêneros que tiveram mais destaque foram Drama e Suspense. O filme com maior número de votos do gênero de drama, foi o Titanic (1953), 
+              que teve um total de 1133692 votos, Os Suspeitos (1995) foi o filme do gênero de suspense com um total de votos de 1.059.4800. 
+              <br />
+              <br />
+              Também é notório ver que a partir dos anos 2000 muitos gêneros ganharam força e bastante audiência.
+            </p>
           </div>
           <div class="visualization">
-            <h1>Gráfico de Disperção que exibe a popularidade dos filmes com o passar dos anos</h1>
+            <h1>Gráfico de Dispersão que exibe a popularidade dos filmes com o passar dos anos</h1>
             <p>
               Neste gráfico apresentamos a popularidade dos filmes com o passar dos anos, ou seja, 
               com este gráfico temos uma ideia da variação da popularidade de acordo com o ano.
@@ -118,6 +129,10 @@
               frameborder="0"
               src="https://observablehq.com/embed/@1c4796c9434db5cb/projeto-final-visualizacao-de-dados/2?cells=viewof+plot3View"
             ></iframe>
+            <p>
+             Com esta visualização podemos identificar o filme mais popular dentre todos os anos e o seu país de produção,
+             o mesmo possui 1437.906 de popularidade e seu nome é All the Old Knives e também podemos observar que não possui tantos dados fora do padrão (marcados no gráfico em preto).
+            </p>
           </div>
           <div class="visualization">
             <h1>Gráfico de barra dos gêneros de filmes</h1>
@@ -132,9 +147,14 @@
               frameborder="0"
               src="https://observablehq.com/embed/@1c4796c9434db5cb/projeto-final-visualizacao-de-dados/2?cells=viewof+plot4View"
             ></iframe>
+            <p>
+             Com a soma geral da popularidade de todos os gêneros do ano de 2020 podemos verificar qual deles é o mais popular com um gráfico de barras existe uma certa discrepância entre os gêneros
+             o gênero de drama e o de scifi por exemplo está com uma popularidade muito alta e o de animação com pouquissimos votos, dentre eles o gênero de drama possui 1140 votos em seguida aparece o gênero de scifi
+             com 1048 votos.
+             </p>
           </div>
           <div class="visualization">
-            <h1>Gráfico de Disperção com repetição de colunas</h1>
+            <h1>Gráfico de Dispersão com repetição de colunas</h1>
             <p>
               Nestes graficos de correlação, colocamos 3 colunas importantes do dataset, 
               sendo elas: runtime, tmdb_score, imdb_score, para verificar se há uma relação entre elas, ou se há alguma forma de regressão, é visto que a unica forma de regressão é quando utilizamos o imdb_score com o tmdb_score, onde ao retiramos os dados colados no eixo da pra aplicar a forma.
@@ -145,6 +165,9 @@
               frameborder="0"
               src="https://observablehq.com/embed/@1c4796c9434db5cb/projeto-final-visualizacao-de-dados/2?cells=viewof+plot5View"
             ></iframe>
+            <p>
+              Como visto, foi utilizado 3 colunas para verificar se o runtime tem alguma correlação com o <b>imdb_score</b> ou o <b>tmdb_score</b>, mas nenhuma informação foi obtida com isso. Há uma certa relação com o <b>imdb_score</b> o <b>tmdb_score</b> porem precisa  verificar por cada gênero suas correlações pois por causa da poluição não se pode concluir muita coisa.
+            </p>
           </div>
         </div>
       </div>
